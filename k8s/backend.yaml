@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: flask
-        image: shaymin0492/board-backend:latest
+        image: shaymin0492/board-backend:f8ea9da
         ports:
         - containerPort: 8001
         env:
@@ -41,7 +41,7 @@ spec:
               name: board-db-secret
               key: DB_PASSWORD
         - name: APP_VERSION
-          value: "v1"
+          value: "f8ea9da"
         readinessProbe:
           httpGet:
             path: /api/health

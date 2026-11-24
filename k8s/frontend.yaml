@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: shaymin0492/board-frontend:latest
+        image: shaymin0492/board-frontend:f8ea9da
         ports:
         - containerPort: 80
 ---
